@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.send">
+
+    <!-- Behörighet att skicka SMS -->
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme._62">
+
+        <!-- Huvudaktivitet för att skicka SMS -->
+        <activity android:name=".Sender"
+            android:label="Send SMS"
+            android:theme="@style/Theme._62"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
+
+<!-- GJORDE TVÅ STYCKEN PACKAGES FÖR VARDERA MED EGNA MANIFEST MEN FICK INTE LÄGGA TILL BÅDA HÄR-->
+
+    <?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+package="com.recieve">
+
+
+<uses-feature
+    android:name="android.hardware.telephony"
+    android:required="false" />
+<!-- Behörighet att ta emot SMS -->
+<uses-permission android:name="android.permission.RECEIVE_SMS"/>
+<!-- Behörighet att läsa SMS -->
+<uses-permission android:name="android.permission.READ_SMS"/>
+
+<application
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:roundIcon="@mipmap/ic_launcher_round"
+    android:supportsRtl="true"
+    android:theme="@style/Theme._62" >
+
+    <!-- Huvudaktivitet för att visa mottagna SMS -->
+    <activity android:name=".Receive"
+        android:label="Receive SMS"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+    <!-- BroadcastReceiver för att ta emot SMS -->
+    <receiver android:name=".SmsReceiver"
+        android:enabled="true"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+        </intent-filter>
+    </receiver>
+
+</application>
+
+</manifest>

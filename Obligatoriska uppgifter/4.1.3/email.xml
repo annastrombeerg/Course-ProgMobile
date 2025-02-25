@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Email">
+
+    <!-- Mottagare -->
+    <EditText
+        android:id="@+id/editTextTo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Mottagare"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Ämne -->
+    <EditText
+        android:id="@+id/editTextSubject"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Ämne"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextTo" />
+
+    <!-- Meddelande -->
+    <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="Meddelande"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextSubject"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.3" />
+
+    <!-- Välj fil (för bifogad fil) -->
+    <Button
+        android:id="@+id/buttonAttachFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bifoga fil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextMessage" />
+
+    <!-- Skicka e-postknapp -->
+    <Button
+        android:id="@+id/buttonSendEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skicka E-post"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonAttachFile" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
