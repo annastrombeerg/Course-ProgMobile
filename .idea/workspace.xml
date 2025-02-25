@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="192f918f-0314-437c-aa10-7460ceb58dec" name="Changes" comment="Second task">
+      <change afterPath="$PROJECT_DIR$/Obligatoriska uppgifter/3.1/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obligatoriska uppgifter/3.1/Camera.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obligatoriska uppgifter/3.1/camera.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obligatoriska uppgifter/3.2/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obligatoriska uppgifter/3.2/Audio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obligatoriska uppgifter/3.2/audio.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obligatoriska uppgifter/3.3/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obligatoriska uppgifter/3.3/Video.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obligatoriska uppgifter/3.3/video.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obligatoriska uppgifter/4.1.1/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obligatoriska uppgifter/4.1.1/Youtube.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obligatoriska uppgifter/4.1.1/youtube.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obligatoriska uppgifter/4.1.2/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obligatoriska uppgifter/4.1.2/Website.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obligatoriska uppgifter/4.1.2/website.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obligatoriska uppgifter/4.1.3/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obligatoriska uppgifter/4.1.3/Email.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obligatoriska uppgifter/4.1.3/email.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obligatoriska uppgifter/6.1/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obligatoriska uppgifter/6.1/Phone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obligatoriska uppgifter/6.1/phone.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obligatoriska uppgifter/6.2/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obligatoriska uppgifter/6.2/Receive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obligatoriska uppgifter/6.2/Sender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obligatoriska uppgifter/6.2/SmsReceiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obligatoriska uppgifter/6.2/receiver.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obligatoriska uppgifter/6.2/sender.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obligatoriska uppgifter/7.1.1/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obligatoriska uppgifter/7.1.1/CopyAndPaste.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obligatoriska uppgifter/7.1.1/copynpaste.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obligatoriska uppgifter/7.2.1/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obligatoriska uppgifter/7.2.1/NotificationApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obligatoriska uppgifter/7.2.1/notification.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obligatoriska uppgifter/7.2.2/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obligatoriska uppgifter/7.2.2/Vibration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obligatoriska uppgifter/7.2.2/vibration.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obligatoriska uppgifter/7.3.1/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obligatoriska uppgifter/7.3.1/Connected.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obligatoriska uppgifter/7.3.1/connected.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2tX9vg5WXYR7qIvSWdOSMls9SqT" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "settings.editor.selected.configurable": "emulator"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="192f918f-0314-437c-aa10-7460ceb58dec" name="Changes" comment="" />
+      <created>1712771912584</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1712771912584</updated>
+    </task>
+    <task id="LOCAL−00001" summary="Added the front image">
+      <option name="closed" value="true" />
+      <created>1740487840478</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1740487840478</updated>
+    </task>
+    <task id="LOCAL−00002" summary="Removed unnecessary Android Studio files">
+      <option name="closed" value="true" />
+      <created>1740487994859</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1740487994859</updated>
+    </task>
+    <task id="LOCAL−00003" summary="First task">
+      <option name="closed" value="true" />
+      <created>1740488662054</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1740488662054</updated>
+    </task>
+    <task id="LOCAL−00004" summary="Renamed">
+      <option name="closed" value="true" />
+      <created>1740488703281</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1740488703281</updated>
+    </task>
+    <task id="LOCAL−00005" summary="Second task">
+      <option name="closed" value="true" />
+      <created>1740488822891</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1740488822891</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added the front image" />
+    <MESSAGE value="Removed unnecessary Android Studio files" />
+    <MESSAGE value="First task" />
+    <MESSAGE value="Renamed" />
+    <MESSAGE value="Second task" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second task" />
+  </component>
+</project>
