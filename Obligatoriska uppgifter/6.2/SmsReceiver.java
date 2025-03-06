@@ -29,10 +29,11 @@ public class SmsReceiver extends BroadcastReceiver {
         Bundle bundle = intent.getExtras();
         if (bundle != null) {
             Object[] pdus = (Object[]) bundle.get("pdus");
+            String format = bundle.getString("format");
             SmsMessage[] messages = new SmsMessage[pdus.length];
 
             for (int i = 0; i < pdus.length; i++) {
-                messages[i] = SmsMessage.createFromPdu((byte[]) pdus[i]);
+                messages[i] = SmsMessage.createFromPdu((byte[]) pdus[i], format);
             }
 
             String sender = messages[0].getOriginatingAddress();

@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import java.io.File;
-import java.io.FileOutputStream;
+import java.io.IOException;
 
 /*
  * Audio är en Android-app som låter användaren spela in och spela upp ljud.
@@ -20,7 +20,6 @@ import java.io.FileOutputStream;
  * stoppa inspelning samt spela upp ljudet.
  * OBS! Denna är prövad på en Pixel 8 Pro API 35.
  */
-
 public class Audio extends AppCompatActivity {
     private static final String RECORDING_FILE = "audio_recording.3gp";
     private static final int REQUEST_PERMISSION = 200;
@@ -64,14 +63,6 @@ public class Audio extends AppCompatActivity {
         playButton.setOnClickListener(v -> startPlaying());
         //Konfigurera knappen för att stoppa inspelning
         stopButton.setOnClickListener(v -> stopRecording());
-
-        //Konfigurera inställningar i onCreate()
-        recorder = new MediaRecorder();
-        player = new MediaPlayer();
-        recorder.setAudioSource(MediaRecorder.AudioSource.MIC);
-        recorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
-        recorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB);
-
     }
 
     /**
@@ -79,13 +70,22 @@ public class Audio extends AppCompatActivity {
      * och sparar inspelningen till en specifik fil på intern lagring.
      * Om något fel inträffar under förberedelse eller inspelning, fångas det och ett felmeddelande visas för användaren.
      */
-    public void startRecording() {
+    private void startRecording() {
+        if (recorder != null) {
+            recorder.release();
+        }
+
+        recorder = new MediaRecorder();
+        recorder.setAudioSource(MediaRecorder.AudioSource.MIC);
+        recorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
+        recorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB);
+        recorder.setOutputFile(audioFile.getAbsolutePath());
+
         try {
             recorder.prepare();
             recorder.start();
             Toast.makeText(this, "Spelar in ljud...", Toast.LENGTH_SHORT).show();
-            recorder.setOutputFile(new FileOutputStream(audioFile).getFD()); // Outputfilen
-        } catch (Exception e) {
+        } catch (IOException e) {
             e.printStackTrace();
             Toast.makeText(this, "Fel vid inspelning", Toast.LENGTH_SHORT).show();
         }
@@ -106,13 +106,23 @@ public class Audio extends AppCompatActivity {
      * Uppspelningen börjar när MediaPlayer har förberetts.
      * * Om något fel inträffar under uppspelning av ljudet, fångas det och ett felmeddelande visas för användaren.
      */
-    public void startPlaying() {
+    private void startPlaying() {
+        if (!audioFile.exists()) {
+            Toast.makeText(this, "Ingen inspelning hittad", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        if (player != null) {
+            player.release();
+        }
+
+        player = new MediaPlayer();
         try {
-            player.setDataSource(audioFile.getAbsolutePath());  //Filens väg till intern lagring
+            player.setDataSource(audioFile.getAbsolutePath());
             player.prepare();
             player.start();
             Toast.makeText(this, "Spelar upp ljud", Toast.LENGTH_SHORT).show();
-        } catch (Exception e) {
+        } catch (IOException e) {
             e.printStackTrace();
             Toast.makeText(this, "Fel vid uppspelning", Toast.LENGTH_SHORT).show();
         }
