@@ -1,0 +1,30 @@
+<resources
+    package="com.budgy">
+    <string name="app_name">Budgy</string>
+    <string name="add">ADD</string>
+    <string name="budget">BUDGET</string>
+    <string name="balance">BALANCE</string>
+    <string name="expense">CHANGE EXPENSES</string>
+    <string name="start_over">START OVER</string>
+    <string name="income">CHANGE INCOME</string>
+    <string name="income_back">Back To Chart</string>
+    <string name="next">NEXT</string>
+    <string name="income_pie">INCOME: 0%</string>
+    <string name="fixed_pie">FIXED: 0%</string>
+    <string name="loanncred_pie">LOAN|CREDIT: 0%</string>
+    <string name="variable_pie">VARIABLE: 0%</string>
+    <string name="make">CALCULATE BUDGY</string>
+    <string name="expense_name">Expense Name</string>
+    <string name="variable_expense">ADD VARIABLE EXPENSES</string>
+    <string name="fixed_expense">ADD FIXED EXPENSES</string>
+    <string name="loan_credit">ADD LOANS AND CREDITS</string>
+    <string name="start">GET STARTED NOW</string>
+    <string name="amount">Amount</string>
+    <string name="app">Your Budget App</string>
+    <string name="smart">Be smart with your money!</string>
+    <string name="welcome">WELCOME \n Let\'s set up your budget</string>
+    <string name="income_info"> \n INCOME \n \n Income includes: Salary, Allowance, Dividend, Profit and Interest</string>
+    <string name="fixed_info">Fixed expenses are costs in your budget that do not vary from month to month, such as: Rent, Insurance, Membership/Subscription costs, Phone bill etc.</string>
+    <string name="loanncred_info">Loan and credits include: Car loans, Personal loans, Student loans, Credit bills and loans etc.</string>
+    <string name="variable_info">Variable expenses are costs that change over time, such as: Groceries, Gas, Dining out, Hygiene articles, Pet expenses etc.</string>
+</resources>

@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.Budgy" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary Colors -->
+        <item name="colorPrimary">@color/purple</item>  <!-- Header and status bar -->
+        <item name="colorPrimaryVariant">@color/purple</item>  <!-- Darker variant -->
+        <item name="colorOnPrimary">@color/white</item>  <!-- Text/icons on primary color -->
+
+        <!-- Secondary Colors -->
+        <item name="colorSecondary">@color/yellow</item>  <!-- Buttons -->
+        <item name="colorSecondaryVariant">@color/yellow</item>  <!-- Darker yellow -->
+        <item name="colorOnSecondary">@color/black</item>  <!-- Text/icons on yellow -->
+
+        <!-- Background and Surface Colors -->
+        <item name="android:colorBackground">@color/grey</item>  <!-- App background -->
+        <item name="colorSurface">@color/blue</item>  <!-- Card background -->
+        <item name="colorOnSurface">@color/white</item>  <!-- Text/icons on blue background -->
+
+        <!-- Status Bar and Navigation Bar -->
+        <item name="android:statusBarColor">@color/purple</item>
+        <item name="android:navigationBarColor">@color/purple</item>
+
+        <!-- Customizing Button Styles -->
+        <item name="android:buttonStyle">@style/NextButton</item>
+    </style>
+
+    <!-- Button Style -->
+    <style name="NextButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/yellow</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="ToTheEndButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/lightblue</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue">#087E8B</color>
+    <color name="purple">#553E4E</color>
+    <color name="lightblue">#B8E1FF</color>
+    <color name="pink">#C492B1</color>
+    <color name="yellow">#FFF275</color>
+    <color name="grey">#BFD1D1D1</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="Income">#B8E1FF</color>
+    <color name="Fixed">#087E8B</color>
+    <color name="LoanAndCredit">#FFF275</color>
+    <color name="Variable">#C492B1</color>
+</resources>

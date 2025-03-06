@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    package="com.budgy">
+
+    <Button
+        android:id="@+id/topPanel"
+        android:layout_width="match_parent"
+        android:layout_height="89dp"
+        android:text="@string/welcome"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/income"
+        android:layout_width="206dp"
+        android:layout_height="212dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/income_info"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_textview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topPanel" />
+
+    <EditText
+        android:id="@+id/income_amount"
+        android:layout_width="197dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="@string/amount"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/income" />
+
+
+    <Button
+        android:id="@+id/back_to_chart"
+        style="@style/ToTheEndButton"
+        android:layout_width="320dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="148dp"
+        android:text="@string/income_back"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:visibility="gone"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/income_amount" />
+
+    <Button
+        android:id="@+id/next_button"
+        style="@style/NextButton"
+        android:layout_width="320dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="220dp"
+        android:text="@string/next"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/income_amount" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
